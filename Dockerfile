@@ -5,6 +5,7 @@ RUN apk add --no-cache \
   libffi-dev \
   libressl-dev \
   openssh-client \
+  git \
   python3-dev \
   py3-pip \
   && pip3 install --upgrade pip \
