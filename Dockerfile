@@ -1,6 +1,6 @@
 FROM node:14.15.3-alpine
 
-RUN apk add --no-cache --virtual .build-deps \
+RUN apk add --no-cache \
   build-base \
   libffi-dev \
   libressl-dev \
@@ -8,8 +8,7 @@ RUN apk add --no-cache --virtual .build-deps \
   python3-dev \
   py3-pip \
   && pip3 install --upgrade pip \
-  && pip3 install awsebcli \
-  && apk del .build-deps
+  && pip3 install awsebcli
 
 VOLUME /root/.aws
 
