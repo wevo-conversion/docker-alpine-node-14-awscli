@@ -1,4 +1,4 @@
-FROM node:14.15.3-alpine
+FROM node:14.17.4-alpine
 
 RUN apk add --no-cache \
   build-base \
